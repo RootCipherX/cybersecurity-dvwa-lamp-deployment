@@ -44,7 +44,7 @@ Next, the core LAMP stack components and PHP extensions required by DVWA were in
 *   `php-mysqli` & `php-gd`: Essential PHP extensions for database connectivity and image processing.
 <br>
 
-![Install LAMP Stack](images/02-installing-web-server.jpg)
+![Install LAMP Stack](images/02-installing-web-server.png)
 
 ---
 
@@ -63,7 +63,7 @@ To ensure the database survives system reboots, the `enable` command creates a p
 The `status` command was utilized to verify that the MariaDB service was actively running and successfully bound to the local loopback interface without errors.
 <br>
 
-![MariaDB Status](images/05-web%20server-status.jpg)
+![MariaDB Status](images/05-web%20server-status.png)
 
 ---
 
