@@ -1,6 +1,6 @@
-# 🌐 Cybersecurity: DVWA LAMP Stack Deployment Guide
+# Cybersecurity: DVWA LAMP Stack Deployment Guide
 
-## 📖 Table of Contents
+## Table of Contents
 - [Introduction to DVWA](#-introduction-to-dvwa)
 - [Project Overview](#-project-overview)
 - [System Architecture & Prerequisites](#️-system-architecture--prerequisites)
@@ -16,15 +16,15 @@
 
 ---
 
-## 🛑 Introduction to DVWA
+## Introduction to DVWA
 The **Damn Vulnerable Web Application (DVWA)** is a PHP/MySQL web application intentionally designed to be highly vulnerable. Its primary goal is to serve as an aid for security professionals, penetration testers, and developers to test their skills and tools in a legal, controlled environment. 
 
 By deploying DVWA locally, security engineers can safely explore the most common web vulnerabilities (such as SQL Injection, Cross-Site Scripting, and File Inclusion) across various levels of difficulty. This hands-on deployment is critical for understanding how these vulnerabilities manifest through poor coding practices and how to properly build and secure the underlying web server infrastructure against them.
 
-## 📌 Project Overview
+## Project Overview
 This repository documents the complete infrastructure deployment of the Damn Vulnerable Web Application (DVWA). Rather than relying on pre-built containers, this lab demonstrates the manual configuration of a full **LAMP Stack** (Linux, Apache, MariaDB, PHP) on Kali Linux. It covers package installation, service management, SQL database creation, secure file permissions, and advanced PHP configuration to prepare the environment for penetration testing.
 
-## 🛠️ System Architecture & Prerequisites
+## System Architecture & Prerequisites
 *   **Operating System:** Kali Linux
 *   **Web Server:** Apache2
 *   **Database Engine:** MariaDB Server
@@ -33,7 +33,7 @@ This repository documents the complete infrastructure deployment of the Damn Vul
 
 ---
 
-## 🚀 Deployment Methodology
+## Deployment Methodology
 
 ### Phase 1: Environment Update & Core Installation
 
@@ -50,7 +50,7 @@ Next, the core LAMP stack components and PHP extensions required by DVWA were in
 *   `php-mysqli` & `php-gd`: Essential PHP extensions for database connectivity and image processing.
 <br>
 
-![Install LAMP Stack](images/02-installing-web-server.jpg)
+![Install LAMP Stack](images/02-installing-web-server.png)
 
 ---
 
@@ -69,7 +69,7 @@ To ensure the database survives system reboots, the `enable` command creates a p
 The `status` command was utilized to verify that the MariaDB service was actively running and successfully bound to the local loopback interface without errors.
 <br>
 
-![MariaDB Status](images/05-web%20server-status.jpg)
+![MariaDB Status](images/05-web%20server-status.png)
 
 ---
 
@@ -184,7 +184,7 @@ To apply all application and PHP configuration modifications, the Apache web ser
 Navigated to `http://localhost/dvwa/setup.php` via a web browser. The DVWA environment checks successfully validated the presence of the required backend modules and writable directories.
 <br>
 
-![DVWA Setup Page 1](images/22-setup-page1.jpg)
+![DVWA Setup Page 1](images/22-setup-page1.png)
 
 Scrolled to the bottom of the setup page and initialized the database creation script by clicking the "Create / Reset Database" button.
 <br>
